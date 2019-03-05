@@ -9,7 +9,7 @@ mix
 
 .js('resources/js/app.js', 'public/js')
 
-.sass('resources/sass/app.scss', 'public/css')
+.sass('resources/scss/app.scss', 'public/css')
 
 .sourceMaps()
 
@@ -23,7 +23,7 @@ mix
    files: [
       `**/*.php`,
       `**/*.js`,
-      `resources/sass/**/*.scss`
+      `resources/scss/**/*.scss`
    ]
 })
 

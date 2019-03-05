@@ -12,13 +12,13 @@
 </head>
 <body>
 
-  @include('partials.nav')
+  @include('global.nav')
 
   <main id="app" role="document">
     @yield('content')
   </main>
 
-  @include('partials.footer')
+  @include('global.footer')
 
 </body>
 </html>

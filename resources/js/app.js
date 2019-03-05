@@ -7,8 +7,12 @@
 
 require('./bootstrap');
 
-import 'uikit';
-import '../../node_modules/uikit/dist/js/uikit-icons'
+/** Import UIkit */
+import UIkit from 'uikit'
+import Icons from 'uikit/dist/js/uikit-icons'
+
+/** Load Icons */
+UIkit.use(Icons)
 
 import Vue from 'vue'
 
