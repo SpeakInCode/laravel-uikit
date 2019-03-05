@@ -14,4 +14,4 @@ Then run:
  
 or if your don't have yarn...
 
-`yarn add browser-sync@2.24.7 browser-sync-webpack-plugin uikit vue-template-compiler` 
+`npm install browser-sync@2.24.7 browser-sync-webpack-plugin uikit vue-template-compiler` 
