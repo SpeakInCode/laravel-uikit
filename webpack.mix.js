@@ -14,8 +14,8 @@ mix
 .sourceMaps()
 
 .browserSync({
-   proxy: 'http://laravel-uikit.test',
-   host: 'http://laravel-uikit.test',
+   proxy: 'http://YOUR_LOCAL_DOMAIN.test',
+   host: 'http://YOUR_LOCAL_DOMAIN.test',
    notify: false,
    open: false,
    reloadOnRestart: true,
