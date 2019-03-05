@@ -1,4 +1,4 @@
-![alt text](https://raw.githubusercontent.com/SpeakInCode/laravel-uikit/master/laravel-uikit-logo.png)
+![alt text](https://github.com/SpeakInCode/laravel-uikit/blob/master/laravel-uikit-logo.png)
 
 # UIkit boilerplate for Laravel
 
