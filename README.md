@@ -15,3 +15,5 @@ Then run:
 or if your don't have yarn...
 
 `npm install browser-sync@2.24.7 browser-sync-webpack-plugin uikit vue-template-compiler` 
+
+then run either `yarn run watch` or `npm run watch` to compile and watch files.
