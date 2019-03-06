@@ -4,6 +4,10 @@
 
 With a better Webpack build process using Laravel Mix and Browser-Sync
 
+---
+
+### How to use:
+
 1. Install a new Laravel project like normal `laravel new <project_name>` 
 
 2. Download this repo, then copy and replace the existing `/resources` directory and `webpack.mix.js` file, with the ones found in this repo.
