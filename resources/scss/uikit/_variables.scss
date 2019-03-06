@@ -1,6 +1,17 @@
 //
-// Accordion
+// Component:       Component Variables & Mixin Hooks
+// Description:     Define values used across specific components
 //
+// Note:            Each component block is wrapped with <editor-fold>
+//                  tags, which allow for code folding within PHPStorm
+//                  and other IntelliJ editors. This makes maintaing
+//                  this massive file much easier. I suggest if you use
+//                  a different editor you replace these tags with your
+//                  editor's solution. Or just remove them. Your choice.
+//
+// ========================================================================
+
+//<editor-fold desc="Accordion">
 
 //$accordion-item-margin-top: $global-margin !default;
 //$accordion-title-font-size: $global-medium-font-size !default;
@@ -11,9 +22,20 @@
 //$inverse-accordion-title-color: $inverse-global-emphasis-color !default;
 //$inverse-accordion-title-hover-color: $inverse-global-color !default;
 
-//
-// Alert
-//
+//@mixin hook-accordion() {}
+//@mixin hook-accordion-item() {}
+//@mixin hook-accordion-title() {}
+//@mixin hook-accordion-title-hover() {}
+//@mixin hook-accordion-content() {}
+//@mixin hook-accordion-misc() {}
+//@mixin hook-inverse-accordion-item() {}
+//@mixin hook-inverse-accordion-title() {}
+//@mixin hook-inverse-accordion-title-hover() {}
+//@mixin hook-inverse-component-accordion() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Alert">
 
 //$alert-margin-vertical: $global-margin !default;
 //$alert-padding: $global-small-gutter !default;
@@ -31,17 +53,28 @@
 //$alert-danger-background: lighten(mix(white, $global-danger-background, 40%), 20%) !default;
 //$alert-danger-color: $global-danger-background !default;
 
-//
-// Align
-//
+//@mixin hook-alert() {}
+//@mixin hook-alert-close() {}
+//@mixin hook-alert-close-hover() {}
+//@mixin hook-alert-primary() {}
+//@mixin hook-alert-success() {}
+//@mixin hook-alert-warning() {}
+//@mixin hook-alert-danger() {}
+//@mixin hook-alert-misc() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Align">
 
 //$align-margin-horizontal: $global-gutter !default;
 //$align-margin-vertical: $global-gutter !default;
 //$align-margin-horizontal-l: $global-medium-gutter !default;
 
-//
-// Animation
-//
+//@mixin hook-align-misc() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Animation">
 
 //$animation-duration: 0.5s !default;
 //$animation-fade-duration: 0.8s !default;
@@ -50,9 +83,11 @@
 //$animation-slide-small-translate: 10px !default;
 //$animation-slide-medium-translate: 50px !default;
 
-//
-// Article
-//
+//@mixin hook-animation-misc() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Article">
 
 //$article-margin-top: $global-large-margin !default;
 //$article-title-font-size-m: $global-xxlarge-font-size !default;
@@ -63,18 +98,29 @@
 //$article-meta-color: $global-muted-color !default;
 //$inverse-article-meta-color: $inverse-global-muted-color !default;
 
-//
-// Background
-//
+//@mixin hook-article() {}
+//@mixin hook-article-adjacent() {}
+//@mixin hook-article-title() {}
+//@mixin hook-article-meta() {}
+//@mixin hook-article-misc() {}
+//@mixin hook-inverse-article-title() {}
+//@mixin hook-inverse-article-meta() {}
+//@mixin hook-inverse-component-article() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Background">
 
 //$background-default-background: $global-background !default;
 //$background-muted-background: $global-muted-background !default;
 //$background-primary-background: $global-primary-background !default;
 //$background-secondary-background: $global-secondary-background !default;
 
-//
-// Badge
-//
+//@mixin hook-background-misc() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Badge">
 
 //$badge-size: 22px !default;
 //$badge-padding-vertical: 0 !default;
@@ -88,9 +134,16 @@
 //$inverse-badge-color: $inverse-global-inverse-color !default;
 //$inverse-badge-hover-color: $inverse-global-inverse-color !default;
 
-//
-// Base
-//
+//@mixin hook-badge() {}
+//@mixin hook-badge-hover() {}
+//@mixin hook-badge-misc() {}
+//@mixin hook-inverse-badge() {}
+//@mixin hook-inverse-badge-hover() {}
+//@mixin hook-inverse-component-badge() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Base">
 
 //$base-body-background: $global-background !default;
 //$base-body-font-family: $global-font-family !default;
@@ -158,15 +211,40 @@
 //$inverse-base-heading-color: $inverse-global-emphasis-color !default;
 //$inverse-base-hr-border: $inverse-global-border !default;
 
-//
-// Border
-//
+//@mixin hook-base-body() {}
+//@mixin hook-base-link() {}
+//@mixin hook-base-link-hover() {}
+//@mixin hook-base-code() {}
+//@mixin hook-base-heading() {}
+//@mixin hook-base-h1() {}
+//@mixin hook-base-h2() {}
+//@mixin hook-base-h3() {}
+//@mixin hook-base-h4() {}
+//@mixin hook-base-h5() {}
+//@mixin hook-base-h6() {}
+//@mixin hook-base-hr() {}
+//@mixin hook-base-blockquote() {}
+//@mixin hook-base-blockquote-footer() {}
+//@mixin hook-base-pre() {}
+//@mixin hook-base-misc() {}
+//@mixin hook-inverse-base-link() {}
+//@mixin hook-inverse-base-link-hover() {}
+//@mixin hook-inverse-base-code() {}
+//@mixin hook-inverse-base-heading() {}
+//@mixin hook-inverse-base-h1() {}
+//@mixin hook-inverse-base-h2() {}
+//@mixin hook-inverse-base-h3() {}
+//@mixin hook-inverse-base-h4() {}
+//@mixin hook-inverse-base-h5() {}
+//@mixin hook-inverse-base-h6() {}
+//@mixin hook-inverse-base-blockquote() {}
+//@mixin hook-inverse-base-blockquote-footer() {}
+//@mixin hook-inverse-base-hr() {}
+//@mixin hook-inverse-component-base() {}
 
-//$border-rounded-border-radius: 5px !default;
+//</editor-fold>
 
-//
-// Box Shadow
-//
+//<editor-fold desc="Box Shadow">
 
 //$box-shadow-duration: 0.1s !default;
 //$box-shadow-bottom-height: 30px !default;
@@ -174,9 +252,11 @@
 //$box-shadow-bottom-background: #444 !default;
 //$box-shadow-bottom-blur: 20px !default;
 
-//
-// Breadcrumb
-//
+//@mixin hook-box-shadow-bottom() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Breadcrumb">
 
 //$breadcrumb-item-font-size: $global-small-font-size !default;
 //$breadcrumb-item-color: $global-muted-color !default;
@@ -191,9 +271,23 @@
 //$inverse-breadcrumb-item-active-color: $inverse-global-color !default;
 //$inverse-breadcrumb-divider-color: $inverse-global-muted-color !default;
 
-//
-// Button
-//
+//@mixin hook-breadcrumb() {}
+//@mixin hook-breadcrumb-item() {}
+//@mixin hook-breadcrumb-item-hover() {}
+//@mixin hook-breadcrumb-item-disabled() {}
+//@mixin hook-breadcrumb-item-active() {}
+//@mixin hook-breadcrumb-divider() {}
+//@mixin hook-breadcrumb-misc() {}
+//@mixin hook-inverse-breadcrumb-item() {}
+//@mixin hook-inverse-breadcrumb-item-hover() {}
+//@mixin hook-inverse-breadcrumb-item-disabled() {}
+//@mixin hook-inverse-breadcrumb-item-active() {}
+//@mixin hook-inverse-breadcrumb-divider() {}
+//@mixin hook-inverse-component-breadcrumb() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Button">
 
 //$button-line-height: $global-control-height !default;
 //$button-small-line-height: $global-control-small-height !default;
@@ -263,9 +357,48 @@
 //$inverse-button-link-color: $inverse-global-muted-color !default;
 //$inverse-button-link-hover-color: $inverse-global-color !default;
 
-//
-// Card
-//
+//@mixin hook-button() {}
+//@mixin hook-button-hover() {}
+//@mixin hook-button-focus() {}
+//@mixin hook-button-active() {}
+//@mixin hook-button-default() {}
+//@mixin hook-button-default-hover() {}
+//@mixin hook-button-default-active() {}
+//@mixin hook-button-primary() {}
+//@mixin hook-button-primary-hover() {}
+//@mixin hook-button-primary-active() {}
+//@mixin hook-button-secondary() {}
+//@mixin hook-button-secondary-hover() {}
+//@mixin hook-button-secondary-active() {}
+//@mixin hook-button-danger() {}
+//@mixin hook-button-danger-hover() {}
+//@mixin hook-button-danger-active() {}
+//@mixin hook-button-disabled() {}
+//@mixin hook-button-small() {}
+//@mixin hook-button-large() {}
+//@mixin hook-button-text() {}
+//@mixin hook-button-text-hover() {}
+//@mixin hook-button-text-disabled() {}
+//@mixin hook-button-link() {}
+//@mixin hook-button-misc() {}
+//@mixin hook-inverse-button-default() {}
+//@mixin hook-inverse-button-default-hover() {}
+//@mixin hook-inverse-button-default-active() {}
+//@mixin hook-inverse-button-primary() {}
+//@mixin hook-inverse-button-primary-hover() {}
+//@mixin hook-inverse-button-primary-active() {}
+//@mixin hook-inverse-button-secondary() {}
+//@mixin hook-inverse-button-secondary-hover() {}
+//@mixin hook-inverse-button-secondary-active() {}
+//@mixin hook-inverse-button-text() {}
+//@mixin hook-inverse-button-text-hover() {}
+//@mixin hook-inverse-button-text-disabled() {}
+//@mixin hook-inverse-button-link() {}
+//@mixin hook-inverse-component-button() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Card">
 
 //$card-body-padding-horizontal: $global-gutter !default;
 //$card-body-padding-vertical: $global-gutter !default;
@@ -311,18 +444,50 @@
 //$card-large-footer-padding-horizontal-l: $global-large-gutter !default;
 //$card-large-footer-padding-vertical-l: round($global-large-gutter / 2) !default;
 
-//
-// Close
-//
+//@mixin hook-card() {}
+//@mixin hook-card-body() {}
+//@mixin hook-card-header() {}
+//@mixin hook-card-footer() {}
+//@mixin hook-card-media() {}
+//@mixin hook-card-media-top() {}
+//@mixin hook-card-media-bottom() {}
+//@mixin hook-card-media-left() {}
+//@mixin hook-card-media-right() {}
+//@mixin hook-card-title() {}
+//@mixin hook-card-badge() {}
+//@mixin hook-card-hover() {}
+//@mixin hook-card-default() {}
+//@mixin hook-card-default-title() {}
+//@mixin hook-card-default-hover() {}
+//@mixin hook-card-default-header() {}
+//@mixin hook-card-default-footer() {}
+//@mixin hook-card-primary() {}
+//@mixin hook-card-primary-title() {}
+//@mixin hook-card-primary-hover() {}
+//@mixin hook-card-secondary() {}
+//@mixin hook-card-secondary-title() {}
+//@mixin hook-card-secondary-hover() {}
+//@mixin hook-card-misc() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Close">
 
 //$close-color: $global-muted-color !default;
 //$close-hover-color: $global-color !default;
 //$inverse-close-color: $inverse-global-muted-color !default;
 //$inverse-close-hover-color: $inverse-global-color !default;
 
-//
-// Column
-//
+//@mixin hook-close() {}
+//@mixin hook-close-hover() {}
+//@mixin hook-close-misc() {}
+//@mixin hook-inverse-close() {}
+//@mixin hook-inverse-close-hover() {}
+//@mixin hook-inverse-component-close() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Column">
 
 //$column-gutter: $global-gutter !default;
 //$column-gutter-l: $global-medium-gutter !default;
@@ -330,9 +495,12 @@
 //$column-divider-rule-width: 1px !default;
 //$inverse-column-divider-rule-color: $inverse-global-border !default;
 
-//
-// Comment
-//
+//@mixin hook-column-misc() {}
+//@mixin hook-inverse-component-column() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Comment">
 
 //$comment-header-margin-bottom: $global-margin !default;
 //$comment-title-font-size: $global-medium-font-size !default;
@@ -344,9 +512,21 @@
 //$comment-list-padding-left: 30px !default;
 //$comment-list-padding-left-m: 100px !default;
 
-//
-// Container
-//
+//@mixin hook-comment() {}
+//@mixin hook-comment-body() {}
+//@mixin hook-comment-header() {}
+//@mixin hook-comment-title() {}
+//@mixin hook-comment-meta() {}
+//@mixin hook-comment-avatar() {}
+//@mixin hook-comment-list-adjacent() {}
+//@mixin hook-comment-list-sub() {}
+//@mixin hook-comment-list-sub-adjacent() {}
+//@mixin hook-comment-primary() {}
+//@mixin hook-comment-misc() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Container">
 
 //$container-max-width: 1200px !default;
 //$container-xsmall-max-width: 750px !default;
@@ -356,9 +536,11 @@
 //$container-padding-horizontal-s: $global-gutter !default;
 //$container-padding-horizontal-m: $global-medium-gutter !default;
 
-//
-// Countdown
-//
+//@mixin hook-container-misc() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Countdown">
 
 //$countdown-item-line-height: 70px !default;
 //$countdown-number-font-size: 2rem !default;
@@ -368,9 +550,27 @@
 //$countdown-separator-font-size-s: 2rem !default;
 //$countdown-separator-font-size-m: 3rem !default;
 
-//
-// Description
-//
+//@mixin hook-countdown() {}
+//@mixin hook-countdown-item() {}
+//@mixin hook-countdown-number() {}
+//@mixin hook-countdown-separator() {}
+//@mixin hook-countdown-label() {}
+//@mixin hook-countdown-misc() {}
+//@mixin hook-inverse-countdown-item() {}
+//@mixin hook-inverse-countdown-number() {}
+//@mixin hook-inverse-countdown-separator() {}
+//@mixin hook-inverse-countdown-label() {}
+//@mixin hook-inverse-component-countdown() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Cover">
+
+//@mixin hook-cover-misc() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Description">
 
 //$description-list-term-color: $global-emphasis-color !default;
 //$description-list-term-margin-top: $global-margin !default;
@@ -378,9 +578,14 @@
 //$description-list-divider-term-border-width: $global-border-width !default;
 //$description-list-divider-term-border: $global-border !default;
 
-//
-// Divider
-//
+//@mixin hook-description-list-term() {}
+//@mixin hook-description-list-description() {}
+//@mixin hook-description-list-divider-term() {}
+//@mixin hook-description-list-misc() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Divider">
 
 //$divider-margin-vertical: $global-margin !default;
 //$divider-icon-width: 50px !default;
@@ -402,9 +607,22 @@
 //$inverse-divider-small-border: $inverse-global-border !default;
 //$inverse-divider-vertical-border: $inverse-global-border !default;
 
-//
-// Dotnav
-//
+//@mixin hook-divider-icon() {}
+//@mixin hook-divider-icon-line() {}
+//@mixin hook-divider-icon-line-left() {}
+//@mixin hook-divider-icon-line-right() {}
+//@mixin hook-divider-small() {}
+//@mixin hook-divider-vertical() {}
+//@mixin hook-divider-misc() {}
+//@mixin hook-inverse-divider-icon() {}
+//@mixin hook-inverse-divider-icon-line() {}
+//@mixin hook-inverse-divider-small() {}
+//@mixin hook-inverse-divider-vertical() {}
+//@mixin hook-inverse-component-divider() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Dotnav">
 
 //$dotnav-margin-horizontal: 12px !default;
 //$dotnav-margin-vertical: $dotnav-margin-horizontal !default;
@@ -420,9 +638,21 @@
 //$inverse-dotnav-item-onclick-background: rgba($inverse-global-color, 0.5) !default;
 //$inverse-dotnav-item-active-background: rgba($inverse-global-color, 0.9) !default;
 
-//
-// Drop
-//
+//@mixin hook-dotnav() {}
+//@mixin hook-dotnav-item() {}
+//@mixin hook-dotnav-item-hover() {}
+//@mixin hook-dotnav-item-onclick() {}
+//@mixin hook-dotnav-item-active() {}
+//@mixin hook-dotnav-misc() {}
+//@mixin hook-inverse-dotnav-item() {}
+//@mixin hook-inverse-dotnav-item-hover() {}
+//@mixin hook-inverse-dotnav-item-onclick() {}
+//@mixin hook-inverse-dotnav-item-active() {}
+//@mixin hook-inverse-component-dotnav() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Drop">
 
 //$drop-z-index: $global-z-index + 20 !default;
 //$drop-width: 300px !default;
@@ -431,9 +661,13 @@
 //$dropcap-font-size: (($global-line-height * 3) * 1em) !default;
 //$dragover-box-shadow: 0 0 20px rgba(100,100,100,0.3) !default;
 
-//
-// Dropdown
-//
+//@mixin hook-dropcap() {}
+//@mixin hook-drop-misc() {}
+//@mixin hook-inverse-dropcap() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Dropdown">
 
 //$dropdown-z-index: $global-z-index + 20 !default;
 //$dropdown-min-width: 200px !default;
@@ -449,9 +683,17 @@
 //$dropdown-nav-sublist-item-color: $global-muted-color !default;
 //$dropdown-nav-sublist-item-hover-color: $global-color !default;
 
-//
-// Form
-//
+//@mixin hook-dropdown() {}
+//@mixin hook-dropdown-nav() {}
+//@mixin hook-dropdown-nav-item() {}
+//@mixin hook-dropdown-nav-item-hover() {}
+//@mixin hook-dropdown-nav-header() {}
+//@mixin hook-dropdown-nav-divider() {}
+//@mixin hook-dropdown-misc() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Form">
 
 //$form-range-thumb-height: 15px !default;
 //$form-range-thumb-border-radius: 500px !default;
@@ -523,9 +765,43 @@
 //$inverse-form-icon-color: $inverse-global-muted-color !default;
 //$inverse-form-icon-hover-color: $inverse-global-color !default;
 
-//
-// Grid
-//
+//@mixin hook-flex-misc() {}
+//@mixin hook-form-range() {}
+//@mixin hook-form-range-thumb() {}
+//@mixin hook-form-range-track() {}
+//@mixin hook-form-range-track-focus() {}
+//@mixin hook-form-range-misc() {}
+//@mixin hook-form() {}
+//@mixin hook-form-single-line() {}
+//@mixin hook-form-multi-line() {}
+//@mixin hook-form-focus() {}
+//@mixin hook-form-disabled() {}
+//@mixin hook-form-danger() {}
+//@mixin hook-form-success() {}
+//@mixin hook-form-blank() {}
+//@mixin hook-form-blank-focus() {}
+//@mixin hook-form-radio() {}
+//@mixin hook-form-radio-focus() {}
+//@mixin hook-form-radio-checked() {}
+//@mixin hook-form-radio-checked-focus() {}
+//@mixin hook-form-radio-disabled() {}
+//@mixin hook-form-legend() {}
+//@mixin hook-form-label() {}
+//@mixin hook-form-stacked-label() {}
+//@mixin hook-form-horizontal-label() {}
+//@mixin hook-form-misc() {}
+//@mixin hook-inverse-form() {}
+//@mixin hook-inverse-form-focus() {}
+//@mixin hook-inverse-form-radio() {}
+//@mixin hook-inverse-form-radio-focus() {}
+//@mixin hook-inverse-form-radio-checked() {}
+//@mixin hook-inverse-form-radio-checked-focus() {}
+//@mixin hook-inverse-form-label() {}
+//@mixin hook-inverse-component-form() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Grid">
 
 //$grid-gutter-horizontal: $global-gutter !default;
 //$grid-gutter-vertical: $grid-gutter-horizontal !default;
@@ -543,9 +819,12 @@
 //$grid-divider-border: $global-border !default;
 //$inverse-grid-divider-border: $inverse-global-border !default;
 
-//
-// Heading
-//
+//@mixin hook-grid-misc() {}
+//@mixin hook-inverse-component-grid() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Heading">
 
 //$heading-primary-font-size-l: 3.75rem !default;
 //$heading-primary-line-height-l: 1.1 !default;
@@ -576,17 +855,32 @@
 //$inverse-heading-bullet-border: $inverse-global-border !default;
 //$inverse-heading-line-border: $inverse-global-border !default;
 
-//
-// Height
-//
+//@mixin hook-heading-primary() {}
+//@mixin hook-heading-hero() {}
+//@mixin hook-heading-divider() {}
+//@mixin hook-heading-bullet() {}
+//@mixin hook-heading-line() {}
+//@mixin hook-heading-misc() {}
+//@mixin hook-inverse-heading-primary() {}
+//@mixin hook-inverse-heading-hero() {}
+//@mixin hook-inverse-heading-divider() {}
+//@mixin hook-inverse-heading-bullet() {}
+//@mixin hook-inverse-heading-line() {}
+//@mixin hook-inverse-component-heading() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Height">
 
 //$height-small-height: 150px !default;
 //$height-medium-height: 300px !default;
 //$height-large-height: 450px !default;
 
-//
-// Icon
-//
+//@mixin hook-height-misc() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Icon">
 
 //$icon-image-size: 20px !default;
 //$icon-link-color: $global-muted-color !default;
@@ -610,9 +904,24 @@
 //$inverse-icon-button-active-background: darken($inverse-icon-button-background, 10%) !default;
 //$inverse-icon-button-active-color: $inverse-global-color !default;
 
-//
-// Iconnav
-//
+//@mixin hook-icon-link() {}
+//@mixin hook-icon-link-hover() {}
+//@mixin hook-icon-link-active() {}
+//@mixin hook-icon-button() {}
+//@mixin hook-icon-button-hover() {}
+//@mixin hook-icon-button-active() {}
+//@mixin hook-icon-misc() {}
+//@mixin hook-inverse-icon-link() {}
+//@mixin hook-inverse-icon-link-hover() {}
+//@mixin hook-inverse-icon-link-active() {}
+//@mixin hook-inverse-icon-button() {}
+//@mixin hook-inverse-icon-button-hover() {}
+//@mixin hook-inverse-icon-button-active() {}
+//@mixin hook-inverse-component-icon() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Iconnav">
 
 //$iconnav-margin-horizontal: $global-small-margin !default;
 //$iconnav-margin-vertical: $iconnav-margin-horizontal !default;
@@ -623,9 +932,19 @@
 //$inverse-iconnav-item-hover-color: $inverse-global-color !default;
 //$inverse-iconnav-item-active-color: $inverse-global-color !default;
 
-//
-// Label
-//
+//@mixin hook-iconnav() {}
+//@mixin hook-iconnav-item() {}
+//@mixin hook-iconnav-item-hover() {}
+//@mixin hook-iconnav-item-active() {}
+//@mixin hook-iconnav-misc() {}
+//@mixin hook-inverse-iconnav-item() {}
+//@mixin hook-inverse-iconnav-item-hover() {}
+//@mixin hook-inverse-iconnav-item-active() {}
+//@mixin hook-inverse-component-iconnav() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Label">
 
 //$label-padding-vertical: 0 !default;
 //$label-padding-horizontal: $global-small-margin !default;
@@ -642,16 +961,28 @@
 //$inverse-label-background: $inverse-global-primary-background !default;
 //$inverse-label-color: $inverse-global-inverse-color !default;
 
-//
-// Leader
-//
+//@mixin hook-label() {}
+//@mixin hook-label-success() {}
+//@mixin hook-label-warning() {}
+//@mixin hook-label-danger() {}
+//@mixin hook-label-misc() {}
+//@mixin hook-inverse-label() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Leader">
 
 //$leader-fill-content: unquote('.') !default;
 //$leader-fill-margin-left: $global-small-gutter !default;
 
-//
-// Lightbox
-//
+//@mixin hook-leader() {}
+//@mixin hook-leader-misc() {}
+//@mixin hook-inverse-leader() {}
+//@mixin hook-inverse-component-leader() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Lightbox">
 
 //$lightbox-z-index: $global-z-index + 10 !default;
 //$lightbox-background: #000 !default;
@@ -670,9 +1001,18 @@
 //$lightbox-button-color: rgba(255,255,255,0.7) !default;
 //$lightbox-button-hover-color: #fff !default;
 
-//
-// Link
-//
+//@mixin hook-lightbox() {}
+//@mixin hook-lightbox-item() {}
+//@mixin hook-lightbox-toolbar() {}
+//@mixin hook-lightbox-toolbar-icon() {}
+//@mixin hook-lightbox-toolbar-icon-hover() {}
+//@mixin hook-lightbox-button() {}
+//@mixin hook-lightbox-button-hover() {}
+//@mixin hook-lightbox-misc() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Link">
 
 //$link-muted-color: $global-muted-color !default;
 //$link-muted-hover-color: $global-color !default;
@@ -684,9 +1024,22 @@
 //$inverse-link-text-hover-color: $inverse-global-muted-color !default;
 //$inverse-link-heading-hover-color: $inverse-global-primary-background !default;
 
-//
-// List
-//
+//@mixin hook-link-muted() {}
+//@mixin hook-link-muted-hover() {}
+//@mixin hook-link-text() {}
+//@mixin hook-link-text-hover() {}
+//@mixin hook-link-heading() {}
+//@mixin hook-link-heading-hover() {}
+//@mixin hook-link-reset() {}
+//@mixin hook-link-misc() {}
+//@mixin hook-inverse-link-muted() {}
+//@mixin hook-inverse-link-muted-hover() {}
+//@mixin hook-inverse-link-text-hover() {}
+//@mixin hook-inverse-link-heading-hover() {}
+
+//</editor-fold>
+
+//<editor-fold desc="List">
 
 //$list-margin-top: $global-small-margin !default;
 //$list-nested-padding-left: $global-gutter !default;
@@ -709,9 +1062,17 @@
 //$inverse-list-striped-background: $inverse-global-muted-background !default;
 //$inverse-list-bullet-icon-color: $inverse-global-color !default;
 
-//
-// Logo
-//
+//@mixin hook-list-divider() {}
+//@mixin hook-list-striped() {}
+//@mixin hook-list-bullet() {}
+//@mixin hook-list-misc() {}
+//@mixin hook-inverse-list-divider() {}
+//@mixin hook-inverse-list-striped() {}
+//@mixin hook-inverse-list-bullet() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Logo">
 
 //$logo-font-size: $global-large-font-size !default;
 //$logo-font-family: $global-font-family !default;
@@ -720,9 +1081,14 @@
 //$inverse-logo-color: $inverse-global-color !default;
 //$inverse-logo-hover-color: $inverse-global-color !default;
 
-//
-// Margin
-//
+//@mixin hook-logo() {}
+//@mixin hook-logo-hover() {}
+//@mixin hook-inverse-logo() {}
+//@mixin hook-inverse-logo-hover() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Margin">
 
 //$margin-margin: $global-margin !default;
 //$margin-small-margin: $global-small-margin !default;
@@ -732,9 +1098,11 @@
 //$margin-xlarge-margin: $global-large-margin !default;
 //$margin-xlarge-margin-l: $global-xlarge-margin !default;
 
-//
-// Marker
-//
+//@mixin hook-margin-misc() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Marker">
 
 //$marker-padding: 5px !default;
 //$marker-background: $global-secondary-background !default;
@@ -744,9 +1112,16 @@
 //$inverse-marker-color: $global-color !default;
 //$inverse-marker-hover-color: $global-color !default;
 
-//
-// Modal
-//
+//@mixin hook-marker() {}
+//@mixin hook-marker-hover() {}
+//@mixin hook-marker-misc() {}
+//@mixin hook-inverse-marker() {}
+//@mixin hook-inverse-marker-hover() {}
+//@mixin hook-inverse-component-marker() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Modal">
 
 //$modal-z-index: $global-z-index + 10 !default;
 //$modal-background: rgba(0,0,0,0.6) !default;
@@ -775,9 +1150,26 @@
 //$modal-close-outside-color: lighten($global-inverse-color, 20%) !default;
 //$modal-close-outside-hover-color: $global-inverse-color !default;
 
-//
-// Nav
-//
+//@mixin hook-modal() {}
+//@mixin hook-modal-dialog() {}
+//@mixin hook-modal-full() {}
+//@mixin hook-modal-body() {}
+//@mixin hook-modal-header() {}
+//@mixin hook-modal-footer() {}
+//@mixin hook-modal-title() {}
+//@mixin hook-modal-close() {}
+//@mixin hook-modal-close-hover() {}
+//@mixin hook-modal-close-default() {}
+//@mixin hook-modal-close-default-hover() {}
+//@mixin hook-modal-close-outside() {}
+//@mixin hook-modal-close-outside-hover() {}
+//@mixin hook-modal-close-full() {}
+//@mixin hook-modal-close-full-hover() {}
+//@mixin hook-modal-misc() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Nav">
 
 //$nav-item-padding-vertical: 5px !default;
 //$nav-item-padding-horizontal: 0 !default;
@@ -835,9 +1227,38 @@
 //$inverse-nav-primary-sublist-item-hover-color: $inverse-global-color !default;
 //$inverse-nav-primary-sublist-item-active-color: $inverse-global-emphasis-color !default;
 
-//
-// Navbar
-//
+//@mixin hook-nav-sub() {}
+//@mixin hook-nav-parent-icon() {}
+//@mixin hook-nav-header() {}
+//@mixin hook-nav-divider() {}
+//@mixin hook-nav-default() {}
+//@mixin hook-nav-default-item() {}
+//@mixin hook-nav-default-item-hover() {}
+//@mixin hook-nav-default-item-active() {}
+//@mixin hook-nav-default-header() {}
+//@mixin hook-nav-default-divider() {}
+//@mixin hook-nav-primary() {}
+//@mixin hook-nav-primary-item() {}
+//@mixin hook-nav-primary-item-hover() {}
+//@mixin hook-nav-primary-item-active() {}
+//@mixin hook-nav-primary-header() {}
+//@mixin hook-nav-primary-divider() {}
+//@mixin hook-nav-misc() {}
+//@mixin hook-inverse-nav-parent-icon() {}
+//@mixin hook-inverse-nav-default-item() {}
+//@mixin hook-inverse-nav-default-item-hover() {}
+//@mixin hook-inverse-nav-default-item-active() {}
+//@mixin hook-inverse-nav-default-header() {}
+//@mixin hook-inverse-nav-default-divider() {}
+//@mixin hook-inverse-nav-primary-item() {}
+//@mixin hook-inverse-nav-primary-item-hover() {}
+//@mixin hook-inverse-nav-primary-item-active() {}
+//@mixin hook-inverse-nav-primary-header() {}
+//@mixin hook-inverse-nav-primary-divider() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Navbar">
 
 //$navbar-background: $global-muted-background !default;
 //$navbar-color-mode: none !default;
@@ -882,9 +1303,42 @@
 //$inverse-navbar-toggle-color: $inverse-global-muted-color !default;
 //$inverse-navbar-toggle-hover-color: $inverse-global-color !default;
 
-//
-// Notification
-//
+//@mixin hook-navbar() {}
+//@mixin hook-navbar-container() {}
+//@mixin hook-navbar-nav-item() {}
+//@mixin hook-navbar-nav-item-hover() {}
+//@mixin hook-navbar-nav-item-onclick() {}
+//@mixin hook-navbar-nav-item-active() {}
+//@mixin hook-navbar-item() {}
+//@mixin hook-navbar-toggle() {}
+//@mixin hook-navbar-toggle-hover() {}
+//@mixin hook-navbar-toggle-icon() {}
+//@mixin hook-navbar-toggle-icon-hover() {}
+//@mixin hook-navbar-subtitle() {}
+//@mixin hook-navbar-transparent() {}
+//@mixin hook-navbar-sticky() {}
+//@mixin hook-navbar-dropdown() {}
+//@mixin hook-navbar-dropdown-dropbar() {}
+//@mixin hook-navbar-dropdown-nav() {}
+//@mixin hook-navbar-dropdown-nav-item() {}
+//@mixin hook-navbar-dropdown-nav-item-hover() {}
+//@mixin hook-navbar-dropdown-nav-item-active() {}
+//@mixin hook-navbar-dropdown-nav-header() {}
+//@mixin hook-navbar-dropdown-nav-divider() {}
+//@mixin hook-navbar-dropbar() {}
+//@mixin hook-navbar-dropbar-slide() {}
+//@mixin hook-navbar-misc() {}
+//@mixin hook-inverse-navbar-nav-item() {}
+//@mixin hook-inverse-navbar-nav-item-hover() {}
+//@mixin hook-inverse-navbar-nav-item-onclick() {}
+//@mixin hook-inverse-navbar-nav-item-active() {}
+//@mixin hook-inverse-navbar-item() {}
+//@mixin hook-inverse-navbar-toggle() {}
+//@mixin hook-inverse-navbar-toggle-hover() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Notification">
 
 //$notification-position: 10px !default;
 //$notification-z-index: $global-z-index + 40 !default;
@@ -902,26 +1356,40 @@
 //$notification-message-warning-color: $global-warning-background !default;
 //$notification-message-danger-color: $global-danger-background !default;
 
-//
-// Offcanvas
-//
+//@mixin hook-notification() {}
+//@mixin hook-notification-message() {}
+//@mixin hook-notification-close() {}
+//@mixin hook-notification-message-primary() {}
+//@mixin hook-notification-message-success() {}
+//@mixin hook-notification-message-warning() {}
+//@mixin hook-notification-message-danger() {}
+//@mixin hook-notification-misc() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Offcanvas">
 
 //$offcanvas-z-index: $global-z-index !default;
 //$offcanvas-bar-width: 270px !default;
-//$offcanvas-bar-padding-vertical: $global-margin !default;
+$offcanvas-bar-padding-vertical: $global-margin * 3 !default;
 //$offcanvas-bar-padding-horizontal: $global-margin !default;
 //$offcanvas-bar-background: $global-secondary-background !default;
 //$offcanvas-bar-color-mode: light !default;
 //$offcanvas-bar-width-m: 350px !default;
-//$offcanvas-bar-padding-vertical-m: $global-medium-gutter !default;
+$offcanvas-bar-padding-vertical-m: $global-margin * 3 !default;
 //$offcanvas-bar-padding-horizontal-m: $global-medium-gutter !default;
 //$offcanvas-close-position: 20px !default;
 //$offcanvas-close-padding: 5px !default;
 //$offcanvas-overlay-background: rgba(0,0,0,0.1) !default;
 
-//
-// Overlay
-//
+//@mixin hook-offcanvas-bar() {}
+//@mixin hook-offcanvas-close() {}
+//@mixin hook-offcanvas-overlay() {}
+//@mixin hook-offcanvas-misc() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Overlay">
 
 //$overlay-padding-horizontal: $global-gutter !default;
 //$overlay-padding-vertical: $global-gutter !default;
@@ -929,9 +1397,15 @@
 //$overlay-primary-background: rgba($global-secondary-background, 0.8) !default;
 //$overlay-primary-color-mode: light !default;
 
-//
-// Padding
-//
+//@mixin hook-overlay() {}
+//@mixin hook-overlay-icon() {}
+//@mixin hook-overlay-default() {}
+//@mixin hook-overlay-primary() {}
+//@mixin hook-overlay-misc() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Padding">
 
 //$padding-padding: $global-gutter !default;
 //$padding-padding-l: $global-medium-gutter !default;
@@ -939,9 +1413,11 @@
 //$padding-large-padding: $global-gutter !default;
 //$padding-large-padding-l: $global-large-gutter !default;
 
-//
-// Pagination
-//
+//@mixin hook-padding-misc() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Pagination">
 
 //$pagination-margin-horizontal: 20px !default;
 //$pagination-item-color: $global-muted-color !default;
@@ -954,45 +1430,73 @@
 //$inverse-pagination-item-active-color: $inverse-global-color !default;
 //$inverse-pagination-item-disabled-color: $inverse-global-muted-color !default;
 
-//
-// Panel
-//
+//@mixin hook-pagination() {}
+//@mixin hook-pagination-item() {}
+//@mixin hook-pagination-item-hover() {}
+//@mixin hook-pagination-item-active() {}
+//@mixin hook-pagination-item-disabled() {}
+//@mixin hook-pagination-misc() {}
+//@mixin hook-inverse-pagination-item() {}
+//@mixin hook-inverse-pagination-item-hover() {}
+//@mixin hook-inverse-pagination-item-active() {}
+//@mixin hook-inverse-pagination-item-disabled() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Panel">
 
 //$panel-scrollable-height: 170px !default;
 //$panel-scrollable-padding: 10px !default;
 //$panel-scrollable-border-width: $global-border-width !default;
 //$panel-scrollable-border: $global-border !default;
 
-//
-// Placeholder
-//
+//@mixin hook-panel-scrollable() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Placeholder">
 
 //$placeholder-margin-vertical: $global-margin !default;
 //$placeholder-padding-vertical: $global-gutter !default;
 //$placeholder-padding-horizontal: $global-gutter !default;
 //$placeholder-background: $global-muted-background !default;
 
-//
-// Position
-//
+//@mixin hook-placeholder() {}
+//@mixin hook-placeholder-misc() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Position">
 
 //$position-small-margin: $global-small-gutter !default;
 //$position-medium-margin: $global-gutter !default;
 //$position-large-margin: $global-gutter !default;
 //$position-large-margin-l: 50px !default;
 
-//
-// Progress
-//
+//@mixin hook-position-misc() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Progress">
 
 //$progress-height: 15px !default;
 //$progress-margin-vertical: $global-margin !default;
 //$progress-background: $global-muted-background !default;
 //$progress-bar-background: $global-primary-background !default;
 
-//
-// Search
-//
+//@mixin hook-progress() {}
+//@mixin hook-progress-bar() {}
+//@mixin hook-progress-misc() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Print">
+
+//@mixin hook-print() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Search">
 
 //$search-color: $global-color !default;
 //$search-placeholder-color: $global-muted-color !default;
@@ -1025,9 +1529,24 @@
 //$inverse-search-toggle-color: $inverse-global-muted-color !default;
 //$inverse-search-toggle-hover-color: $inverse-global-color !default;
 
-//
-// Section
-//
+//@mixin hook-search-input() {}
+//@mixin hook-search-default-input() {}
+//@mixin hook-search-default-input-focus() {}
+//@mixin hook-search-navbar-input() {}
+//@mixin hook-search-large-input() {}
+//@mixin hook-search-toggle() {}
+//@mixin hook-search-toggle-hover() {}
+//@mixin hook-search-misc() {}
+//@mixin hook-inverse-search-default-input() {}
+//@mixin hook-inverse-search-default-input-focus() {}
+//@mixin hook-inverse-search-navbar-input() {}
+//@mixin hook-inverse-search-large-input() {}
+//@mixin hook-inverse-search-toggle() {}
+//@mixin hook-inverse-search-toggle-hover() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Section">
 
 //$section-padding-vertical: $global-medium-margin !default;
 //$section-padding-vertical-m: $global-large-margin !default;
@@ -1044,9 +1563,17 @@
 //$section-secondary-background: $global-secondary-background !default;
 //$section-secondary-color-mode: light !default;
 
-//
-// Slidenav
-//
+//@mixin hook-section() {}
+//@mixin hook-section-default() {}
+//@mixin hook-section-muted() {}
+//@mixin hook-section-primary() {}
+//@mixin hook-section-secondary() {}
+//@mixin hook-section-overlap() {}
+//@mixin hook-section-misc() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Slidenav">
 
 //$slidenav-padding-vertical: 5px !default;
 //$slidenav-padding-horizontal: 10px !default;
@@ -1059,17 +1586,49 @@
 //$inverse-slidenav-hover-color: rgba($inverse-global-color, 0.95) !default;
 //$inverse-slidenav-active-color: rgba($inverse-global-color, 0.7) !default;
 
-//
-// Sortable
-//
+//@mixin hook-slidenav() {}
+//@mixin hook-slidenav-hover() {}
+//@mixin hook-slidenav-active() {}
+//@mixin hook-slidenav-previous() {}
+//@mixin hook-slidenav-next() {}
+//@mixin hook-slidenav-large() {}
+//@mixin hook-slidenav-container() {}
+//@mixin hook-slidenav-misc() {}
+//@mixin hook-inverse-slidenav() {}
+//@mixin hook-inverse-slidenav-hover() {}
+//@mixin hook-inverse-slidenav-active() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Slider">
+
+//@mixin hook-slider() {}
+//@mixin hook-slider-misc() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Slideshow">
+
+//@mixin hook-slideshow() {}
+//@mixin hook-slideshow-misc() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Sortable">
 
 //$sortable-dragged-z-index: $global-z-index + 50 !default;
 //$sortable-placeholder-opacity: 0 !default;
 //$sortable-empty-height: 50px !default;
 
-//
-// Spinner
-//
+//@mixin hook-sortable() {}
+//@mixin hook-sortable-drag() {}
+//@mixin hook-sortable-placeholder() {}
+//@mixin hook-sortable-empty() {}
+//@mixin hook-sortable-misc() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Spinner">
 
 //$spinner-size: 30px !default;
 //$spinner-stroke-width: 1 !default;
@@ -1077,17 +1636,22 @@
 //$spinner-circumference: round(2 * 3.141 * $spinner-radius) !default;
 //$spinner-duration: 1.4s !default;
 
-//
-// Sticky
-//
+//@mixin hook-spinner() {}
+//@mixin hook-spinner-misc() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Sticky">
 
 //$sticky-z-index: $global-z-index - 20 !default;
 //$sticky-animation-duration: 0.2s !default;
 //$sticky-reverse-animation-duration: 0.2s !default;
 
-//
-// Subnav
-//
+//@mixin hook-sticky-misc() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Subnav">
 
 //$subnav-margin-horizontal: 20px !default;
 //$subnav-item-color: $global-muted-color !default;
@@ -1123,9 +1687,52 @@
 //$inverse-subnav-pill-item-active-color: $inverse-global-inverse-color !default;
 //$inverse-subnav-item-disabled-color: $inverse-global-muted-color !default;
 
+//@mixin hook-subnav() {}
+//@mixin hook-subnav-item() {}
+//@mixin hook-subnav-item-hover() {}
+//@mixin hook-subnav-item-active() {}
+//@mixin hook-subnav-divider() {}
+//@mixin hook-subnav-pill-item() {}
+//@mixin hook-subnav-pill-item-hover() {}
+//@mixin hook-subnav-pill-item-onclick() {}
+//@mixin hook-subnav-pill-item-active() {}
+//@mixin hook-subnav-item-disabled() {}
+//@mixin hook-subnav-misc() {}
+//@mixin hook-inverse-subnav-item() {}
+//@mixin hook-inverse-subnav-item-hover() {}
+//@mixin hook-inverse-subnav-item-active() {}
+//@mixin hook-inverse-subnav-divider() {}
+//@mixin hook-inverse-subnav-pill-item() {}
+//@mixin hook-inverse-subnav-pill-item-hover() {}
+//@mixin hook-inverse-subnav-pill-item-onclick() {}
+//@mixin hook-inverse-subnav-pill-item-active() {}
+//@mixin hook-inverse-subnav-item-disabled() {}
+
+//</editor-fold>
+
+//<editor-fold desc="SVG">
+
+//@mixin svg-fill($src, $color-default, $color-new, $property: background-image){
 //
-// Tab
+//  $escape-color-default:  escape($color-default) !default;
+//  $escape-color-new:  escape("#{$color-new}") !default;
 //
+//  $data-uri:  data-uri('image/svg+xml;charset=UTF-8', "#{$src}") !default;
+//  $replace-src:  replace("#{$data-uri}", "#{$escape-color-default}", "#{$escape-color-new}", "g") !default;
+//
+//  #{$property}: unquote($replace-src);
+//}
+//@mixin hook-svg-misc() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Switcher">
+
+//@mixin hook-switcher-misc() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Tab">
 
 //$tab-margin-horizontal: 20px !default;
 //$tab-item-padding-horizontal: 10px !default;
@@ -1140,9 +1747,27 @@
 //$inverse-tab-item-active-color: $inverse-global-emphasis-color !default;
 //$inverse-tab-item-disabled-color: $inverse-global-muted-color !default;
 
-//
-// Table
-//
+//@mixin hook-tab() {}
+//@mixin hook-tab-item() {}
+//@mixin hook-tab-item-hover() {}
+//@mixin hook-tab-item-active() {}
+//@mixin hook-tab-item-disabled() {}
+//@mixin hook-tab-bottom() {}
+//@mixin hook-tab-bottom-item() {}
+//@mixin hook-tab-left() {}
+//@mixin hook-tab-right() {}
+//@mixin hook-tab-left-item() {}
+//@mixin hook-tab-right-item() {}
+//@mixin hook-tab-misc() {}
+//@mixin hook-inverse-tab() {}
+//@mixin hook-inverse-tab-item() {}
+//@mixin hook-inverse-tab-item-hover() {}
+//@mixin hook-inverse-tab-item-active() {}
+//@mixin hook-inverse-tab-item-disabled() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Table">
 
 //$table-margin-vertical: $global-margin !default;
 //$table-cell-padding-vertical: 16px !default;
@@ -1170,9 +1795,29 @@
 //$inverse-table-striped-row-background: $inverse-global-muted-background !default;
 //$inverse-table-hover-row-background: $inverse-table-row-active-background !default;
 
-//
-// Text
-//
+//@mixin hook-table() {}
+//@mixin hook-table-header-cell() {}
+//@mixin hook-table-cell() {}
+//@mixin hook-table-footer() {}
+//@mixin hook-table-caption() {}
+//@mixin hook-table-divider() {}
+//@mixin hook-table-striped() {}
+//@mixin hook-table-hover() {}
+//@mixin hook-table-row-active() {}
+//@mixin hook-table-small() {}
+//@mixin hook-table-large() {}
+//@mixin hook-table-misc() {}
+//@mixin hook-inverse-table-header-cell() {}
+//@mixin hook-inverse-table-caption() {}
+//@mixin hook-inverse-table-row-active() {}
+//@mixin hook-inverse-table-divider() {}
+//@mixin hook-inverse-table-striped() {}
+//@mixin hook-inverse-table-hover() {}
+//@mixin hook-inverse-component-table() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Text">
 
 //$text-lead-font-size: $global-large-font-size !default;
 //$text-lead-line-height: 1.5 !default;
@@ -1198,16 +1843,35 @@
 //$inverse-text-emphasis-color: $inverse-global-emphasis-color !default;
 //$inverse-text-primary-color: $inverse-global-color !default;
 
-//
-// Thumbnav
-//
+//@mixin hook-text-lead() {}
+//@mixin hook-text-meta() {}
+//@mixin hook-text-small() {}
+//@mixin hook-text-large() {}
+//@mixin hook-text-background() {}
+//@mixin hook-text-misc() {}
+//@mixin hook-inverse-text-lead() {}
+//@mixin hook-inverse-text-meta() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Thumbnav">
 
 //$thumbnav-margin-horizontal: 15px !default;
 //$thumbnav-margin-vertical: $thumbnav-margin-horizontal !default;
 
-//
-// Tile
-//
+//@mixin hook-thumbnav() {}
+//@mixin hook-thumbnav-item() {}
+//@mixin hook-thumbnav-item-hover() {}
+//@mixin hook-thumbnav-item-active() {}
+//@mixin hook-thumbnav-misc() {}
+//@mixin hook-inverse-thumbnav-item() {}
+//@mixin hook-inverse-thumbnav-item-hover() {}
+//@mixin hook-inverse-thumbnav-item-active() {}
+//@mixin hook-inverse-component-thumbnav() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Tile">
 
 //$tile-padding-horizontal: 15px !default;
 //$tile-padding-horizontal-s: $global-gutter !default;
@@ -1227,9 +1891,16 @@
 //$tile-secondary-background: $global-secondary-background !default;
 //$tile-secondary-color-mode: light !default;
 
-//
-// Tooltip
-//
+//@mixin hook-tile() {}
+//@mixin hook-tile-default() {}
+//@mixin hook-tile-muted() {}
+//@mixin hook-tile-primary() {}
+//@mixin hook-tile-secondary() {}
+//@mixin hook-tile-misc() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Tooltip">
 
 //$tooltip-z-index: $global-z-index + 30 !default;
 //$tooltip-max-width: 200px !default;
@@ -1241,9 +1912,12 @@
 //$tooltip-font-size: 12px !default;
 //$tooltip-margin: 10px !default;
 
-//
-// Totop
-//
+//@mixin hook-tooltip() {}
+//@mixin hook-tooltip-misc() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Totop">
 
 //$totop-padding: 5px !default;
 //$totop-color: $global-muted-color !default;
@@ -1253,9 +1927,17 @@
 //$inverse-totop-hover-color: $inverse-global-color !default;
 //$inverse-totop-active-color: $inverse-global-emphasis-color !default;
 
-//
-// Transition
-//
+//@mixin hook-totop() {}
+//@mixin hook-totop-hover() {}
+//@mixin hook-totop-active() {}
+//@mixin hook-totop-misc() {}
+//@mixin hook-inverse-totop() {}
+//@mixin hook-inverse-totop-hover() {}
+//@mixin hook-inverse-totop-active() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Transition">
 
 //$transition-duration: 0.3s !default;
 //$transition-scale: 1.1 !default;
@@ -1263,12 +1945,24 @@
 //$transition-slide-medium-translate: 50px !default;
 //$transition-slow-duration: 0.7s !default;
 
-//
-// Width
-//
+//@mixin hook-transition-misc() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Visibility">
+
+//@mixin hook-visibility-misc() {}
+
+//</editor-fold>
+
+//<editor-fold desc="Width">
 
 //$width-small-width: 150px !default;
 //$width-medium-width: 300px !default;
 //$width-large-width: 450px !default;
 //$width-xlarge-width: 600px !default;
 //$width-xxlarge-width: 750px !default;
+
+//@mixin hook-width-misc() {}
+
+//</editor-fold>
