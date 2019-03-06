@@ -4,9 +4,9 @@
 
 With a better Webpack build process using Laravel Mix and Browser-Sync
 
-1. Install Laravel like normal `laravel new <project_name>` 
+1. Install a new Laravel project like normal `laravel new <project_name>` 
 
-2. Download this repo, then copy and replace the existing `/resources` and `webpack.mix.js` with the ones found in this repo.
+2. Download this repo, then copy and replace the existing `/resources` directory and `webpack.mix.js` file, with the ones found in this repo.
 
 3. Update the `proxy` and `host` to use your local domain in the `webpack.mix.js` file within the `.browserSync()` method.
 
