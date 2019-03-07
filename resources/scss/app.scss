@@ -1,13 +1,16 @@
 // UIkit
 // ===================================================
 
-// Variable & Mixin Overrides
+// Variable Overrides
 @import "uikit/globals";
 @import 'uikit/variables';
 
 // UIkit Dependencies
 @import "node_modules/uikit/src/scss/variables-theme.scss";
 @import "node_modules/uikit/src/scss/mixins-theme.scss";
+
+// Mixin Overrides
+@import "uikit/mixins";
 
 // UIkit Core
 @import "node_modules/uikit/src/scss/uikit-theme.scss";
