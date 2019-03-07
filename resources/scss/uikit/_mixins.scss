@@ -1,4 +1,14 @@
+//
+// We import the variables file here as well since it contains the mixins
+// needed to override the core styles. Nothing is duplicated though, since
+// the _variables.scss file only contains declarations. So still write all
+// all $variable and @mixin overrides in the _variables.scss file. Only use
+// this file if you need to add any other custom mixins you may have.
+//
+// =========================================================================
+
 @import "variables";
+
 
 
 
