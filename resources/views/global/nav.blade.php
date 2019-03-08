@@ -5,7 +5,7 @@
 
 <header id="site-header">
   <div class="uk-container">
-    <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar="offset: 0; delay-hide: 500;">
+    <nav class="uk-navbar-container uk-navbar-transparent uk-navbar" uk-navbar="offset: 0; delay-hide: 500;">
       <div class="uk-navbar-left">
         <div class="uk-navbar-item">
           <a class="uk-logo" href="">
