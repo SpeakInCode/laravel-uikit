@@ -3,7 +3,8 @@
   $logo = 'http://placehold.it/200x50&text=LOGO';
 @endphp
 
-<header id="site-header">
+{{-- App Header --}}
+<header id="app-header" class="uk-background-muted">
   <div class="uk-container">
     <nav class="uk-navbar-container uk-navbar-transparent uk-navbar" uk-navbar="offset: 0; delay-hide: 500;">
       <div class="uk-navbar-left">
@@ -18,21 +19,19 @@
           <li><a href="#">Dashboard</a></li>
           <li><a href="#">Profile</a></li>
         </ul>
-        <a class="uk-navbar-toggle uk-hidden{{ $breakpoint }}" uk-toggle uk-navbar-toggle-icon href="#offcanvas-nav"></a>
+        <a href="#offcanvas-nav" class="uk-navbar-toggle uk-hidden{{ $breakpoint }}" uk-navbar-toggle-icon uk-toggle></a>
       </div>
     </nav>
   </div>
 </header>
 
-<div id="offcanvas-nav" uk-offcanvas="flip: true; overlay: true;">
+{{-- Mobile Menu --}}
+<div id="offcanvas-nav" uk-offcanvas="flip: true; overlay: true">
   <div class="uk-offcanvas-bar">
-
     <button class="uk-offcanvas-close" type="button" uk-close></button>
-
-    <ul class="uk-nav uk-nav-primary" uk-nav>
+    <ul class="uk-nav uk-nav-default" uk-nav>
       <li><a href="#">Dashboard</a></li>
       <li><a href="#">Profile</a></li>
     </ul>
-
   </div>
 </div>

@@ -1,6 +1,6 @@
 ![alt text](https://github.com/SpeakInCode/laravel-uikit/blob/master/laravel-uikit-logo.png)
 
-# UIkit boilerplate for Laravel
+# UIkit boilerplate for Laravel 8
 
 With a better Webpack build process using Laravel Mix and Browser-Sync
 
@@ -14,7 +14,9 @@ With a better Webpack build process using Laravel Mix and Browser-Sync
 
 3. Update the `proxy` and `host` to use your local domain in the `webpack.mix.js` file within the `.browserSync()` method.
 
-4. Install dependencies: `npm install browser-sync@2.24.7 browser-sync-webpack-plugin uikit vue-template-compiler`
+4. Install dependencies: `npm install browser-sync uikit --dev`
+
+5. Run `npm run dev` to compile files.
 
 5. Run `npm run watch` to compile and watch files.
 
@@ -26,17 +28,15 @@ With a better Webpack build process using Laravel Mix and Browser-Sync
 
 - `/resources`
 
-  - `/js/app.js` removed Bootstrap, imported UIkit & UIkit icons.
+  - `/js/app.js` imported UIkit & UIkit icons.
   
   - `/scss`
-    - prepped with a `/components` directory.
-    - `/global` contains a ready to go `_nav.scss`, `_footer.scss` & `_site.scss`
+    - `/global` contains a ready to go `_nav.scss` & `_footer.scss`
     - `/uikit/_globals.scss` for overriding UIkit global variables.
-    - `/uikit/_variables.scss` prepped with all component variables AND hook mixins!!! Well organized and even wrapped with code folding elements for IntelliJ editors like PHPstorm, (You can easily find/replace these tags to work for your editor if need be).
+    - `/uikit/_components.scss` prepped with all component variables AND hook mixins!!! Well organized and even wrapped with code folding elements for VS Code & IntelliJ editors.
     - `app.scss` one import file to rule them all.
   
   - `/views`
-    - prepped with a `/components` directory.
     - `/global` contains a simple `nav.blade` & `footer.blade`
     - `/layouts` has a boilerplate `app.blade` layout wrapping all views.
     - `welcome.blade` as the current home view to match Laravel's default route.

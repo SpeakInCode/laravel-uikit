@@ -1,33 +1,25 @@
-// UIkit
-// ===================================================
+// ==============================================
+//  UIkit
+// ==============================================
 
-// Variable Overrides
+// Global Variable Overrides
 @import "uikit/globals";
-@import 'uikit/variables';
 
 // UIkit Dependencies
-@import "node_modules/uikit/src/scss/variables-theme.scss";
-@import "node_modules/uikit/src/scss/mixins-theme.scss";
+@import "node_modules/uikit/src/scss/variables";
+@import "node_modules/uikit/src/scss/mixins";
 
-// Mixin Overrides
-@import "uikit/mixins";
+// Component Variables and Mixin Overrides
+@import 'uikit/components';
 
 // UIkit Core
-@import "node_modules/uikit/src/scss/uikit-theme.scss";
+@import "node_modules/uikit/src/scss/uikit";
 
 
-// App Styles
-// ===================================================
+// ==============================================
+//  App Styles
+// ==============================================
 
-// Global
-@import "global/site";
+// Global Components
 @import "global/nav";
 @import "global/footer";
-
-// Components
-
-
-// Views
-
-
-

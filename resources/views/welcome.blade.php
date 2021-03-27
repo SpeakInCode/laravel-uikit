@@ -1,7 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-
-  <h1 class="uk-text-center">Welcome</h1>
+  
+  <div class="uk-height-viewport uk-flex uk-flex-middle uk-flex-center">
+    <h1>{{ config('app.name') }}</h1>
+  </div>
 
 @endsection
