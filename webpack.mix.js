@@ -21,6 +21,7 @@ mix
    reloadOnRestart: true,
    injectChanges: true,
    files: [
+      `!vendor/*`,
       `**/*.php`,
       `**/*.js`,
       `resources/scss/**/*.scss`
